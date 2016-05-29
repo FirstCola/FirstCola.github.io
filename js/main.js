@@ -108,9 +108,9 @@ require([], function (){
 	}
 	if($(".instagram").length) {
             require(['/js/photo.js', '/fancybox/jquery.fancybox.js', '/js/jquery.lazyload.js'], function(obj) {
-for(i in test ){
+for(i in obj ){
    alert(i);
-   alert(test[i]);
+   alert(obj[i]);
 
 }
                 obj.init();
