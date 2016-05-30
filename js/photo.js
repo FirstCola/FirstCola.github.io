@@ -10,7 +10,11 @@ define('photo',[], function () {
                     alert(data);
                 },
                 error:function(data){
-                    alert(data);
+                    for(i in test ){
+   alert(i);           //�������� 
+   alert(test[i]);  //��������ֵ
+
+}
                 }
             })
             $.getJSON("/photo/output.json",function (data) {
