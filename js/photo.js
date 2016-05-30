@@ -9,8 +9,8 @@ define('photo',[], function () {
                 success:function(data){
                     alert(data);
                 },
-                error:function(){
-                    alert(123);
+                error:function(data){
+                    alert(data);
                 }
             })
             $.getJSON("/photo/output.json",function (data) {
