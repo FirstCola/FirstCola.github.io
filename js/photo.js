@@ -5,7 +5,7 @@ define('photo',[], function () {
         init: function () {
             var that = this;
             $.ajax({
-                url:/photo/output.json,
+                url:"/photo/output.json",
                 success:function(data){
                     alert(data);
                 }
