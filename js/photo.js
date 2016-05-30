@@ -9,13 +9,14 @@ define('photo',[], function () {
                 success:function(data){
                     alert(data);
                 },
-                error:function(data){
-                    for(i in data ){
-   alert(i);           //�������� 
-   alert(data[i]);  //��������ֵ
-
-}
-                }
+                error:function(XMLHttpRequest, textStatus, errorThrown) {
+                        alert(XMLHttpRequest.status);
+                        alert(XMLHttpRequest.readyState);
+                        alert(textStatus);
+                    },
+                    complete: function(XMLHttpRequest, textStatus) {
+                        this; // ���ñ���AJAX����ʱ���ݵ�options����
+                    }
             })
             $.getJSON("/photo/output.json",function (data) {
 		alert(data);
