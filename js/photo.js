@@ -1,4 +1,4 @@
-define('photoModule',[], function () {
+define('photo',[], function () {
     return {
         page: 1,
         offset: 20,
