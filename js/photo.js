@@ -6,6 +6,7 @@ define('photo',[], function () {
             var that = this;
             $.ajax({
                 url:"/photo/output.json",
+                dataType:"json",
                 success:function(data){
                     alert(data);
                 },
