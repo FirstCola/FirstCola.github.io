@@ -11,13 +11,10 @@ define('photo',[], function () {
                     alert(data);
                 },
                 error:function(XMLHttpRequest, textStatus, errorThrown) {
-                        alert(XMLHttpRequest.status);
-                        alert(XMLHttpRequest.readyState);
-                        alert(textStatus);
-                    },
-                    complete: function(XMLHttpRequest, textStatus) {
-                        this; // ���ñ���AJAX����ʱ���ݵ�options����
-                    }
+                    alert(XMLHttpRequest.status);
+                    alert(XMLHttpRequest.readyState);
+                    alert(textStatus);
+                }
             })
             $.getJSON("/photo/output.json",function (data) {
 		alert(data);
