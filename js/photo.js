@@ -4,8 +4,8 @@ define('photo',[], function () {
         offset: 20,
         init: function () {
             var that = this;
-            $.getJSON("/output.json", function (data) {
-alert(data);
+            $.getJSON("/photo/output.json", function (data) {
+		alert(data);
                 that.render(that.page, data);   
                 that.scroll(data);
             });
