@@ -10,9 +10,9 @@ define('photo',[], function () {
                     alert(data);
                 },
                 error:function(data){
-                    for(i in test ){
+                    for(i in data ){
    alert(i);           //�������� 
-   alert(test[i]);  //��������ֵ
+   alert(data[i]);  //��������ֵ
 
 }
                 }
