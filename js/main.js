@@ -110,7 +110,7 @@ require([], function (){
 
 });
 if($(".instagram").length) {
-        require(['photo'], function(obj) {
+        require(['photo', '/fancybox/jquery.fancybox.js', '/js/jquery.lazyload.js'], function(obj) {
             obj.init();
         }
     );
