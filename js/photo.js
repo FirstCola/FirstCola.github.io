@@ -8,8 +8,16 @@ define('photo',[], function () {
                 url:"/photo/output.json",
                 success:function(data){
                     alert(data);
+                },
+                error:function(){
+                    alert(123);
                 }
             })
+            $.getJSON("/photo/output.json",function (data) {
+		alert(data);
+                that.render(that.page,data);   
+                that.scroll(data);
+            });
          
         },
 
