@@ -1,6 +1,6 @@
 &quot;use strict&quot;;
 const fs = require(&quot;fs&quot;);
-const path = &quot;../../photos&quot;;
+const path = &quot;../photos&quot;;
 
 fs.readdir(path, function (err, files) {
     if (err) {
