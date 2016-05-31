@@ -18,8 +18,8 @@ define('photo',[], function () {
             var html, li = "";
             for (var i = begin; i < end && i < data.length; i++) {
                 li += '<li><div class="img-box">' +
-                    '<a class="img-bg" rel="example_group" href="https://FirstCola.github.io/photos/' + data[i]"></a>' +
-                    '<img lazy-src="https://FirstCola.github.io/photos/' + data[i]" />' +
+                    '<a class="img-bg" rel="example_group" href="https://FirstCola.github.io/photos/' + data[i]+'"></a>' +
+                    '<img lazy-src="https://FirstCola.github.io/photos/' + data[i]+'"/>' +
                     '</li>';
             }
 
