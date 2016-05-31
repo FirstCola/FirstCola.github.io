@@ -4,19 +4,7 @@ define('photo',[], function () {
         offset: 20,
         init: function () {
             var that = this;
-            $.ajax({
-                url:"/photo/output.json",
-                success:function(data){
-                    alert(data);
-                },
-                error:function(XMLHttpRequest, textStatus, errorThrown) {
-                    alert(XMLHttpRequest.status);
-                    alert(XMLHttpRequest.readyState);
-                    alert(textStatus);
-                }
-            })
             $.getJSON("/photo/output.json",function (data) {
-		alert(data);
                 that.render(that.page,data);   
                 that.scroll(data);
             });
